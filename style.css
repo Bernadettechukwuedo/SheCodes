@@ -4,13 +4,15 @@ body {
   
   .weather {
     position: absolute;
-    right: 20%;
-    top: 20%;
+    right: 35%;
+    
+    top: 15%;
     font-family: Roboto, sans-serif;
     font-size: 48px;
   }
   span.hi {
     font-size: 40px;
+  
   }
   span.unit {
     font-size: 28px;
