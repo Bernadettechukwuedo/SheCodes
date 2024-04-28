@@ -142,6 +142,26 @@ function search(event) {
         temp.innerHTML = temperature;
     }
     axios.get(apiUrl).then(weather);
+
+    let date_time = document.querySelector("span.date");
+
+    let day = new Date();
+    let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thurday",
+        "Friday",
+        "Saturday",
+    ];
+
+    let output = `${days[day.getDay()]
+        } ${day.getHours()}:${day.getMinutes()}`;
+    date_time.innerHTML = output;
+
+
+
 }
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
